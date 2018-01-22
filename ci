@@ -42,10 +42,8 @@ case "${1:?}"-"${2:?}" in
     script-eunit)
         make eunit
         ;;
-    script-dialyzer)
+    script-static_analysis)
         make dialyzer
-        ;;
-    script-doc)
         ./rebar3 edoc
         ;;
     script-package)
